@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Agent nieruchomości Włocławek - sprzedaż, wynajem, zakup | Izabela Koprowska Do Kwadratu</title>
+<meta name="description" content="Licencjonowany agent nieruchomości we Włocławku. Sprzedaż, wynajem i zakup mieszkań, domów i działek: wycena, sesja zdjęciowa, dron, film i formalności u notariusza. Tel. 602 642 154.">
+<meta name="theme-color" content="#003f69">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-640.webp" imagesrcset="img/hero-m-420.webp 420w, img/hero-m-640.webp 640w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:96%;ascent-override:104%;descent-override:30%}
+:root{--nav:#003f69;--nav2:#0b2f50;--or:#ff914d;--or2:#ff7a2b;--ink:#0d2236;--mut:#4a5868;--g:#f1f4f7;--line:#d9e0e7;--hh:64px;--w:min(calc(100vw - 32px),1680px)}
+@media (min-width:761px){:root{--hh:84px;--w:min(91vw,1680px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Jost,"Jost fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(17px,.25vw + 15.5px,20px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:500;line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(32px,3.2vw,62px)}
+h3{font-size:clamp(20px,1.3vw,26px);font-weight:500;line-height:1.25}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 30px;background:var(--or);color:var(--nav2);font:600 1.05rem/1.2 Jost,"Jost fb",Arial,sans-serif;text-align:center;text-decoration:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s}
+.btn:hover{background:#ffa266}
+.btn.gr{background:var(--nav);color:#fff}.btn.gr:hover{background:var(--nav2)}
+.btn:focus-visible,.menu a:focus-visible,.tab:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+/* znak z logo: pomaranczowa rama z przerwa, w ktorej siedzi podpis */
+.rama{position:relative}
+.rama::before{content:"";position:absolute;inset:0;border:2px solid var(--or);border-bottom:0;pointer-events:none}
+.rama::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;pointer-events:none;background:linear-gradient(90deg,var(--or) 0 var(--gap0,0px),transparent var(--gap0,0px) var(--gap1,0px),var(--or) var(--gap1,0px))}
+.kw{display:inline-block;width:.62em;height:.62em;border:2px solid var(--or);flex:none;transform:translateY(-.06em)}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.top.sc{border-bottom-color:var(--line);box-shadow:0 6px 18px rgba(0,40,70,.07)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:block;flex:none;line-height:0}
+.logo img{height:44px;width:auto}
+@media (min-width:761px){.logo img{height:60px}}
+.menu{display:flex;align-items:center;gap:clamp(16px,1.7vw,36px)}
+.menu a{text-decoration:none;font-weight:500;font-size:1.02rem;position:relative;padding:6px 0}
+.menu a.on::after,.menu a:not(.btn):hover::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--or)}
+.menu .tel{font-weight:600;white-space:nowrap;color:var(--nav)}
+.menu .btn{min-height:50px;padding:0 22px}
+.ikt{display:none}
+.burger{display:none}
+@media (max-width:1240px){.menu .tel{display:none}}
+@media (max-width:1040px){
+  .menu{position:fixed;inset:var(--hh) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 22px;border-top:1px solid var(--line);box-shadow:0 18px 30px rgba(0,40,70,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
+  .top.open .menu{transform:none;opacity:1;visibility:visible}
+  .menu a{padding:15px 2px;border-bottom:1px solid var(--g);font-size:1.1rem}
+  .menu a.on::after,.menu a:hover::after{display:none}
+  .menu a.on{color:var(--nav);box-shadow:inset 3px 0 0 var(--or);padding-left:14px}
+  .menu .tel{display:block}
+  .menu .btn{margin-top:16px;border:0}
+  .ikt{display:inline-grid;place-items:center;width:46px;height:46px;margin-left:auto;text-decoration:none;color:var(--nav)}
+  .ikt svg{width:23px;height:23px}
+  .burger{display:inline-grid;place-items:center;width:46px;height:46px;border:0;background:var(--nav);cursor:pointer;padding:0}
+  .burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;transition:.2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  .top.open .burger span{background:transparent}
+  .top.open .burger span::before{top:0;transform:rotate(45deg)}
+  .top.open .burger span::after{top:0;transform:rotate(-45deg)}
+}
+
+/* hero: pelne zdjecie, haslo w ramie z logo */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--nav2)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,28,48,.86) 0%,rgba(6,28,48,.62) 38%,rgba(6,28,48,.08) 72%),linear-gradient(0deg,rgba(6,28,48,.55) 0%,rgba(6,28,48,0) 45%)}
+.hero .wrap{position:relative;z-index:1;padding:clamp(40px,7vh,96px) 0 clamp(44px,9vh,110px)}
+.hero .tresc{max-width:min(1000px,56vw);padding:clamp(30px,3vw,56px) clamp(28px,3vw,58px) clamp(38px,3.4vw,62px);--gap0:clamp(26px,2.6vw,52px);--gap1:calc(var(--gap0) + 340px)}
+.hero h1{font-size:clamp(36px,3.2vw,66px);font-weight:500;line-height:1.06}
+.hero .lead{margin-top:22px;font-size:clamp(17px,1.05vw,22px);line-height:1.55;max-width:42em;color:#e3ebf2}
+.hero .btn{margin-top:30px}
+.hero .podpis{position:absolute;left:var(--gap0);bottom:0;transform:translateY(50%);padding:0 14px;font-size:.92rem;font-weight:500;letter-spacing:.02em;color:#fff;white-space:nowrap}
+@media (max-width:760px){
+  .hero{min-height:calc(100svh - var(--hh));align-items:flex-end}
+  .hero picture img{object-position:40% 50%}
+  .hero::after{background:linear-gradient(0deg,rgba(6,28,48,.94) 0%,rgba(6,28,48,.82) 46%,rgba(6,28,48,.15) 80%,rgba(6,28,48,0) 100%)}
+  .hero .wrap{padding:20svh 0 30px}
+  .hero .tresc{max-width:none;padding:26px 20px 32px;--gap0:20px}
+  .hero h1{font-size:clamp(28px,8vw,38px);line-height:1.1}
+  .hero .lead{margin-top:14px;font-size:clamp(16px,4.3vw,18px);line-height:1.5}
+  .hero .btn{margin-top:24px;width:100%}
+  .hero .podpis{font-size:.82rem;padding:0 10px}
+}
+@media (max-width:760px) and (max-height:700px){.hero .wrap{padding-top:16svh;padding-bottom:26px}.hero h1{font-size:clamp(27px,7.6vw,34px)}.hero .tresc{padding:22px 18px 28px}}
+@media (min-width:761px) and (max-height:820px){.hero h1{font-size:clamp(34px,2.8vw,54px)}.hero .wrap{padding-bottom:56px}}
+
+.sek{padding:clamp(64px,8vw,140px) 0}
+.sek.sz{background:var(--g)}
+.glowa{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(30px,3vw,52px)}
+.glowa p{color:var(--mut);max-width:40em;margin-top:14px}
+
+/* oferty */
+.tabs{display:flex;gap:0;border:1px solid var(--line)}
+.tab{font:500 1rem/1 Jost,"Jost fb",Arial,sans-serif;padding:0 20px;min-height:48px;background:#fff;border:0;border-right:1px solid var(--line);cursor:pointer;color:var(--ink)}
+.tab:last-child{border-right:0}
+.tab[aria-pressed=true]{background:var(--nav);color:#fff}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*24px)/4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+@media (min-width:2100px){.tor{grid-auto-columns:calc((100% - 4*24px)/5)}}
+@media (max-width:1300px){.tor{grid-auto-columns:calc((100% - 2*22px)/3);gap:22px}}
+@media (max-width:900px){.tor{grid-auto-columns:calc((100% - 18px)/2);gap:18px}}
+@media (max-width:600px){.tor{grid-auto-columns:84%;gap:14px}}
+.of{scroll-snap-align:start;min-width:0;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.of[hidden]{display:none}
+.of .fot{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--g)}
+.of .fot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.of:hover .fot img{transform:scale(1.03)}
+.of .lab{position:absolute;left:0;top:16px;background:var(--nav);color:#fff;font-size:.82rem;font-weight:500;padding:6px 12px}
+.of .lab.or{background:var(--or);color:var(--nav2)}
+.of .opis{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.of .gdzie{font-size:.9rem;color:var(--mut)}
+.of h3{font-size:clamp(18px,1.1vw,21px)}
+.of .dane{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.of .cena{font-size:clamp(21px,1.35vw,26px);font-weight:600;color:var(--nav);white-space:nowrap}
+.of .cena small{font-size:.62em;font-weight:500;color:var(--mut)}
+.of .par{font-size:.92rem;color:var(--mut);white-space:nowrap}
+.of .par sup,.m2 sup{color:var(--or2);font-weight:600}
+.nav2{display:flex;gap:10px;margin-top:26px}
+.nav2 button{width:52px;height:52px;border:1px solid var(--nav);background:#fff;color:var(--nav);cursor:pointer;display:grid;place-items:center}
+.nav2 button:hover:not(:disabled){background:var(--nav);color:#fff}
+.nav2 button:disabled{opacity:.3;cursor:default}
+.nav2 svg{width:20px;height:20px}
+.dol{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.dol .uw{color:var(--mut);font-size:.95rem}
+
+/* uslugi */
+.usl{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,5vw,110px);align-items:start}
+.usl .zdj{position:sticky;top:calc(var(--hh) + 30px)}
+.usl .zdj .rama{padding:0 0 18px 18px}
+.usl .zdj .rama::before{inset:18px 18px 0 0;border-bottom:2px solid var(--or)}.usl .zdj .rama::after{display:none}
+.usl .zdj img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover}
+.usl ul{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.usl li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 18px;padding:26px 0;border-bottom:1px solid var(--line)}
+.usl li .kw{grid-row:span 2;margin-top:.5em}
+.usl li p{color:var(--mut)}
+.usl .intro{color:var(--mut);margin-top:16px;max-width:38em}
+@media (max-width:900px){.usl{grid-template-columns:1fr}.usl .zdj{position:relative;top:0;max-width:520px}.usl .zdj img{aspect-ratio:4/3}}
+
+/* marketing - mocna sekcja w granacie z logo */
+.mk{background:var(--nav);color:#fff}
+.mk .uk{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(36px,5vw,110px);align-items:center}
+.mk h2{color:#fff}
+.mk .lead{color:#d3e1ec;margin-top:18px;max-width:36em}
+.mk ul{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px}
+.mk li{padding:18px 0;border-top:1px solid rgba(255,255,255,.18);display:flex;gap:16px;align-items:baseline}
+.mk li b{display:block;font-weight:500;font-size:1.08em}
+.mk li span{display:block;color:#c3d4e2;font-size:.94em;margin-top:2px}
+.mk .zdj{position:relative;padding:22px 0 0 22px}
+.mk .zdj::before{content:"";position:absolute;inset:0 22px 22px 0;border:2px solid var(--or)}
+.mk .zdj img{position:relative;width:100%;aspect-ratio:4/3;object-fit:cover}
+.mk .zdj figcaption{position:relative;margin-top:12px;font-size:.9rem;color:#c3d4e2}
+.mk .btn{margin-top:34px}
+@media (max-width:900px){.mk .uk{grid-template-columns:1fr}.mk ul{grid-template-columns:1fr}}
+
+/* o mnie */
+.om{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(36px,5vw,110px);align-items:center}
+.om .fot{position:relative;padding:0 22px 22px 0}
+.om .fot::before{content:"";position:absolute;inset:22px 0 0 22px;border:2px solid var(--or)}
+.om .fot img{position:relative;width:100%;aspect-ratio:840/669;object-fit:cover;object-position:40% 30%}
+.om p{color:var(--mut);margin-top:18px;max-width:38em}
+.om .fakty{margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;max-width:640px}
+.om .fakty div{padding:14px 0;border-top:1px solid var(--line)}
+.om .fakty b{display:block;font-weight:500;color:var(--ink)}
+.om .fakty span{color:var(--mut);font-size:.94rem}
+@media (max-width:900px){.om{grid-template-columns:1fr}}
+
+/* opinie */
+.op{scroll-snap-align:start;min-width:0;background:#fff;padding:32px 30px 28px;display:flex;flex-direction:column;gap:20px;border-top:3px solid var(--or)}
+.op blockquote{margin:0;font-size:1.04em;line-height:1.6}
+.op cite{font-style:normal;font-weight:600;color:var(--nav);margin-top:auto}
+.op cite span{display:block;font-weight:400;color:var(--mut);font-size:.88rem}
+#opn{grid-auto-columns:calc((100% - 2*24px)/3)}
+@media (min-width:2100px){#opn{grid-auto-columns:calc((100% - 3*24px)/4)}}
+@media (max-width:1100px){#opn{grid-auto-columns:calc((100% - 18px)/2)}}
+@media (max-width:640px){#opn{grid-auto-columns:88%}}
+
+/* faq */
+.faq{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(30px,5vw,110px)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 44px 24px 0;font-size:clamp(18px,1.15vw,22px);font-weight:500;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;border:2px solid var(--or);transform:translateY(-50%);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{color:var(--mut);padding:0 0 26px;max-width:46em}
+.faq .bok p{color:var(--mut);margin-top:16px}
+@media (max-width:900px){.faq{grid-template-columns:1fr}}
+
+/* kontakt */
+.kt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,5vw,110px)}
+.kt .dane{margin-top:26px;display:grid;gap:18px}
+.kt .dane a{text-decoration:none}
+.kt .dane .du{font-size:clamp(24px,1.8vw,34px);font-weight:500;color:var(--nav)}
+.kt .dane .du:hover{color:var(--or2)}
+.kt .dane span{display:block;color:var(--mut);font-size:.92rem}
+.mapa{margin-top:30px;aspect-ratio:16/10;background:#dfe5eb;border:1px solid var(--line)}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+form{background:#fff;padding:clamp(24px,3vw,48px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px;align-content:start}
+form .cal{grid-column:1/-1}
+label{display:block;font-size:.92rem;font-weight:500;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #b9c4cf;background:#fff;color:var(--ink);border-radius:0}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--or);outline-offset:0;border-color:var(--or)}
+[aria-invalid=true]{border-color:#c0392b}
+.zg{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;color:var(--mut);font-weight:400}
+.zg input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--nav)}
+#msg{grid-column:1/-1;background:var(--g);padding:14px 16px;border-left:3px solid var(--or)}
+form .btn{justify-self:start}
+@media (max-width:900px){.kt{grid-template-columns:1fr}}
+@media (max-width:560px){form{grid-template-columns:1fr}form .btn{width:100%}}
+
+/* stopka */
+footer{background:var(--nav2);color:#d6e1ea;padding:56px 0 26px;font-size:.95rem}
+footer .g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+footer .fh{margin:0 0 12px;color:#fff;font-weight:500;font-size:1.02rem}
+footer a{text-decoration:none}footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+footer .z{display:flex;align-items:center;gap:14px}
+footer .z .kv{width:44px;height:44px;flex:none}
+footer .z b{color:#fff;font-weight:500;font-size:1.12rem;display:block;line-height:1.2}
+footer .opis{margin-top:14px;max-width:30em;color:#b8cad8}
+footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:#a9bccc;font-size:.88rem}
+@media (max-width:900px){footer .g{grid-template-columns:1fr 1fr}footer .g>div:first-child{grid-column:1/-1}}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+
+/* pasek dolny po przewinieciu */
+.mob{display:none}
+@media (max-width:760px){
+  .mob{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 18px rgba(0,40,70,.15)}
+  .mob.widac{transform:none}
+  .mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;text-decoration:none;font-weight:600}
+  .mob .t{background:#fff;color:var(--nav)}
+  .mob .z{background:var(--or);color:var(--nav2)}
+  footer{padding-bottom:84px}
+}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(5,20,34,.94);display:none;align-items:center;justify-content:center;padding:60px 16px}
+.lb.otw{display:flex}
+.lb img{max-width:min(1400px,100%);max-height:calc(100svh - 150px);width:auto;object-fit:contain}
+.lb p{position:absolute;left:16px;right:16px;bottom:18px;text-align:center;color:#dce6ef;font-size:.95rem}
+.lb button{position:absolute;width:52px;height:52px;border:0;background:rgba(255,255,255,.1);color:#fff;font-size:26px;cursor:pointer}
+.lb .x{top:12px;right:12px}.lb .p{left:12px;top:50%}.lb .n{right:12px;top:50%}
+.of .fot button{all:unset;display:block;width:100%;height:100%;cursor:zoom-in}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#oferty">Przejdź do treści</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="Do Kwadratu Nieruchomości i Marketing - Izabela Koprowska, strona główna"><img src="img/logo-112.webp" width="288" height="112" alt="Do Kwadratu Nieruchomości &amp; Marketing - Izabela Koprowska"></a>
+    <a class="ikt" href="tel:+48602642154" aria-label="Zadzwoń: 602 642 154"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="miter"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#oferty">Oferty</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#marketing">Marketing</a>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="tel" href="tel:+48602642154">602 642 154</a>
+      <a class="btn" href="#kontakt">Zgłoś nieruchomość</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="start">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-m-420.webp 420w, img/hero-m-640.webp 640w" sizes="100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="1600" height="900" alt="Widok z drona na Wisłę i zabudowę pod Włocławkiem" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div class="tresc rama" id="hrama">
+      <h1>Agent nieruchomości we&nbsp;Włocławku - sprzedaż i&nbsp;wynajem z&nbsp;marketingiem do&nbsp;kwadratu</h1>
+      <p class="lead">Wycena, sesja zdjęciowa, ujęcia z drona, film i formalności u notariusza. Mieszkania, domy i działki we Włocławku i okolicach, od pierwszej rozmowy do aktu.</p>
+      <a class="btn" href="#kontakt">Umów bezpłatną analizę ceny</a>
+      <span class="podpis" id="podpis">Izabela Koprowska · licencja nr 31348</span>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="oferty">
+  <div class="wrap">
+    <div class="glowa">
+      <div>
+        <h2>Aktualne oferty</h2>
+        <p>Domy, mieszkania i działki we Włocławku i okolicy. Każda oferta z pełną sesją zdjęciową, a większość także z ujęciami z drona.</p>
+      </div>
+      <div class="tabs" role="group" aria-label="Rodzaj transakcji">
+        <button class="tab" type="button" data-f="all" aria-pressed="true">Wszystkie</button>
+        <button class="tab" type="button" data-f="sprzedaz" aria-pressed="false">Sprzedaż</button>
+        <button class="tab" type="button" data-f="wynajem" aria-pressed="false">Wynajem</button>
+      </div>
+    </div>
+    <div class="tor" id="tor" data-tor data-grupa>
+      <article class="of" data-t="sprzedaz">
+        <div class="fot"><button type="button" data-lb="img/o-krzyzowki-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-krzyzowki-480.webp" srcset="img/o-krzyzowki-480.webp 480w, img/o-krzyzowki-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Energooszczędny dom z ogrodem w Krzyżówkach"></button><span class="lab or">Bez prowizji</span></div>
+        <div class="opis"><span class="gdzie">Krzyżówki, gm. Lipno</span><h3>Energooszczędny dom na wzgórzu z widokiem na jezioro</h3><div class="dane"><span class="cena">899 000 zł</span><span class="par">5 pok. · 110 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="sprzedaz">
+        <div class="fot"><button type="button" data-lb="img/o-blizniak-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-blizniak-480.webp" srcset="img/o-blizniak-480.webp 480w, img/o-blizniak-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Nowy bliźniak w Szpetalu Górnym, widok z drona"></button><span class="lab">Na wyłączność</span></div>
+        <div class="opis"><span class="gdzie">Szpetal Górny, ul. Sadowa</span><h3>Nowy bliźniak w stanie deweloperskim</h3><div class="dane"><span class="cena">670 000 zł</span><span class="par">5 pok. · 122 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="wynajem">
+        <div class="fot"><button type="button" data-lb="img/o-michelin-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-michelin-480.webp" srcset="img/o-michelin-480.webp 480w, img/o-michelin-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Salon dwupokojowego mieszkania na Michelinie"></button></div>
+        <div class="opis"><span class="gdzie">Włocławek, Michelin</span><h3>Dwupokojowe mieszkanie na 1. piętrze</h3><div class="dane"><span class="cena">1 600 zł <small>/ mies.</small></span><span class="par">2 pok. · 30 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="sprzedaz">
+        <div class="fot"><button type="button" data-lb="img/o-szpetal-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-szpetal-480.webp" srcset="img/o-szpetal-480.webp 480w, img/o-szpetal-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Dom wolnostojący z ogrodem w Szpetalu Górnym"></button><span class="lab">Na wyłączność</span></div>
+        <div class="opis"><span class="gdzie">Szpetal Górny, gm. Fabianki</span><h3>Wielozadaniowy dom wolnostojący w otoczeniu zieleni</h3><div class="dane"><span class="cena">749 000 zł</span><span class="par">4 pok. · 231 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="sprzedaz">
+        <div class="fot"><button type="button" data-lb="img/o-rachcin-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-rachcin-480.webp" srcset="img/o-rachcin-480.webp 480w, img/o-rachcin-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Działka budowlana w Rachcinie na mapie z drona"></button></div>
+        <div class="opis"><span class="gdzie">Rachcin, gm. Bobrowniki</span><h3>Działka budowlana z warunkami zabudowy</h3><div class="dane"><span class="cena">189 440 zł</span><span class="par">3007 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="wynajem">
+        <div class="fot"><button type="button" data-lb="img/o-antoniego-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-antoniego-480.webp" srcset="img/o-antoniego-480.webp 480w, img/o-antoniego-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Kawalerka przy ulicy Świętego Antoniego"></button></div>
+        <div class="opis"><span class="gdzie">Włocławek, ul. Świętego Antoniego</span><h3>Kawalerka z miejscem parkingowym</h3><div class="dane"><span class="cena">1 500 zł <small>/ mies.</small></span><span class="par">1 pok. · 30 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="sprzedaz">
+        <div class="fot"><button type="button" data-lb="img/o-ostrowitko-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-ostrowitko-480.webp" srcset="img/o-ostrowitko-480.webp 480w, img/o-ostrowitko-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Działka z domem w budowie w Ostrowitku, widok z drona"></button></div>
+        <div class="opis"><span class="gdzie">Ostrowitko, gm. Lipno</span><h3>Dom w budowie pod Twoje życzenie</h3><div class="dane"><span class="cena">550 000 zł</span><span class="par">4 pok. · 82,3 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="wynajem">
+        <div class="fot"><button type="button" data-lb="img/o-lokietka-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-lokietka-480.webp" srcset="img/o-lokietka-480.webp 480w, img/o-lokietka-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Kawalerka z loggią przy parku Łokietka"></button><span class="lab">Na wyłączność</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, centrum</span><h3>Kawalerka z loggią przy parku Łokietka</h3><div class="dane"><span class="cena">1 100 zł <small>/ mies.</small></span><span class="par">1 pok. · 37 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of" data-t="sprzedaz">
+        <div class="fot"><button type="button" data-lb="img/o-rybnica-800.webp" aria-label="Powiększ zdjęcie"><img src="img/o-rybnica-480.webp" srcset="img/o-rybnica-480.webp 480w, img/o-rybnica-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Murowany domek z drewnianą werandą na działce ROD"></button></div>
+        <div class="opis"><span class="gdzie">Włocławek, Rybnica</span><h3>Działka ROD z murowanym domkiem</h3><div class="dane"><span class="cena">52 000 zł</span><span class="par">300 m<sup>2</sup></span></div></div>
+      </article>
+    </div>
+    <div class="dol">
+      <div class="nav2" data-nav="tor"><button type="button" data-k="-1" aria-label="Poprzednie oferty"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.5 4l-6 6 6 6"/></svg></button><button type="button" data-k="1" aria-label="Następne oferty"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.5 4l6 6-6 6"/></svg></button></div>
+      <p class="uw">Oferty i ceny z obecnej strony (18.11.2026). Na docelowej stronie każda oferta ma własną podstronę.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek sz" id="uslugi">
+  <div class="wrap usl">
+    <div class="zdj"><div class="rama"><img src="img/uslugi-700.webp" srcset="img/uslugi-700.webp 700w, img/uslugi-1200.webp 1200w" sizes="(max-width:900px) 92vw, 38vw" width="700" height="875" loading="lazy" alt="Jasny salon z wyjściem na ogród w domu w Szpetalu Górnym"></div></div>
+    <div>
+      <h2>W czym mogę Ci pomóc</h2>
+      <p class="intro">Prowadzę przez cały proces, od A do Z: wycena, przygotowanie oferty, prezentacje, negocjacje i formalności u notariusza.</p>
+      <ul>
+        <li><span class="kw"></span><h3>Sprzedaż nieruchomości</h3><p>Mieszkania, domy i działki we Włocławku i w całym kujawsko-pomorskim. Zdjęcia, dron, opisy i dotarcie do właściwych kupujących, także gdy na co dzień mieszkasz poza regionem.</p></li>
+        <li><span class="kw"></span><h3>Wynajem</h3><p>Dla właścicieli: oferta, weryfikacja najemców i umowa. Dla najemców: mieszkanie lub lokal w dogodnej lokalizacji, dopasowany do potrzeb.</p></li>
+        <li><span class="kw"></span><h3>Zakup</h3><p>Analiza rynku, selekcja ofert, negocjacje i bezpieczna finalizacja u notariusza. Kupujesz świadomie i bez ryzyka.</p></li>
+        <li><span class="kw"></span><h3>Formalności</h3><p>Stan prawny i księgi wieczyste, komplet dokumentów do aktu, terminy u notariusza, kontakt z doradcami kredytowymi i protokół przekazania.</p></li>
+        <li><span class="kw"></span><h3>Wsparcie dla deweloperów</h3><p>Plan sprzedaży, kampanie, wizualizacje i sesje, prezentacje inwestycji i dni otwarte, obsługa zgodna z ustawą deweloperską.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek mk" id="marketing">
+  <div class="wrap uk">
+    <div>
+      <h2>Nieruchomości i marketing - razem działają do kwadratu</h2>
+      <p class="lead">Łączę dane, storytelling i nowoczesne narzędzia, żeby Twoja nieruchomość przyciągała właściwych kupujących i sprzedawała się lepiej. Oto, co dostaje każda oferta.</p>
+      <ul>
+        <li><span class="kw"></span><div><b>Bezpłatna analiza ceny</b><span>Porównanie z realnymi transakcjami i bieżącym popytem.</span></div></li>
+        <li><span class="kw"></span><div><b>Profesjonalna sesja zdjęciowa</b><span>Wnętrza i otoczenie w najlepszym świetle.</span></div></li>
+        <li><span class="kw"></span><div><b>Ujęcia z drona</b><span>Działka, okolica i dojazd widoczne od razu.</span></div></li>
+        <li><span class="kw"></span><div><b>Filmy na media społecznościowe</b><span>Pionowe wideo nagrane i zmontowane pod Instagram i TikTok.</span></div></li>
+        <li><span class="kw"></span><div><b>Opisy pod wyszukiwarki</b><span>Teksty, które portale i Google pokazują wyżej.</span></div></li>
+        <li><span class="kw"></span><div><b>Formalności notarialne</b><span>Dokumenty, umowy i terminy - po mojej stronie.</span></div></li>
+      </ul>
+      <a class="btn" href="#kontakt">Zapytaj o sprzedaż</a>
+    </div>
+    <figure class="zdj" style="margin:0">
+      <img src="img/dron-700.webp" srcset="img/dron-700.webp 700w, img/dron-1200.webp 1200w" sizes="(max-width:900px) 92vw, 40vw" width="700" height="525" loading="lazy" alt="Zdjęcie z drona: nowy bliźniak w Szpetalu Górnym na tle pól">
+      <figcaption>Ujęcie z drona z oferty bliźniaka w Szpetalu Górnym.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sek" id="o-mnie">
+  <div class="wrap om">
+    <div class="fot"><img src="img/izabela-840.webp" srcset="img/izabela-500.webp 500w, img/izabela-840.webp 840w" sizes="(max-width:900px) 92vw, 42vw" width="840" height="669" loading="lazy" alt="Izabela Koprowska, agentka nieruchomości we Włocławku"></div>
+    <div>
+      <h2>Izabela Koprowska</h2>
+      <p>Pomagam mieszkańcom Włocławka i okolic sprzedawać, kupować i wynajmować nieruchomości, a przede wszystkim robić to skutecznie. Każda transakcja to dla mnie osobna historia: inne potrzeby i konkretny cel do osiągnięcia.</p>
+      <p>Od lat pracuję w marketingu i sprzedaży. Tę wiedzę wykorzystuję, żeby oferta przyciągała uwagę właściwych osób, a całą resztę - komunikację, negocjacje i umowy - biorę na siebie.</p>
+      <div class="fakty">
+        <div><b>Licencjonowany pośrednik</b><span>licencja zawodowa nr 31348</span></div>
+        <div><b>Magister</b><span>Zarządzanie, Psychologia Biznesu, Nowe Media i E-Biznes</span></div>
+        <div><b>Współpraca z prawnikami</b><span>bezpieczeństwo umów i dokumentów</span></div>
+        <div><b>Włocławek i okolice</b><span>ul. Kraszewskiego 9, Włocławek</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek sz" id="opinie">
+  <div class="wrap">
+    <div class="glowa"><div><h2>Opinie klientów</h2><p>Kilka słów od osób, które sprzedawały, kupowały i wynajmowały ze mną.</p></div>
+      <div class="nav2" data-nav="opn" style="margin:0"><button type="button" data-k="-1" aria-label="Poprzednie opinie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.5 4l-6 6 6 6"/></svg></button><button type="button" data-k="1" aria-label="Następne opinie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.5 4l6 6-6 6"/></svg></button></div>
+    </div>
+    <div class="tor" id="opn" data-tor>
+      <figure class="op" style="margin:0"><blockquote>Proces sprzedaży przeprowadzony wzorowo! Profesjonalizm na najwyższym poziomie, a co najważniejsze - skuteczność! Dom sprzedany w zaledwie kilka tygodni.</blockquote><cite>Damian M<span>sprzedaż domu</span></cite></figure>
+      <figure class="op" style="margin:0"><blockquote>Polecam współpracę z Panią Izą - profesjonalna, rzetelna i zaangażowana osoba. Cały proces wynajmu przebiega sprawnie i bezstresowo, a kontakt jest zawsze szybki i klarowny.</blockquote><cite>Agata M<span>wynajem</span></cite></figure>
+      <figure class="op" style="margin:0"><blockquote>Zakup domu przeprowadzony na wysokim poziomie. Pani Iza zadbała o wszystkie szczegóły, prowadząc cały proces z dużą starannością.</blockquote><cite>Daniel S<span>zakup domu</span></cite></figure>
+      <figure class="op" style="margin:0"><blockquote>10/10 :) Świetna współpraca z Panią Izabelą. Profesjonalna obsługa klienta. Formalności załatwione w ekspresowym terminie. Serdecznie polecam.</blockquote><cite>Michał H</cite></figure>
+      <figure class="op" style="margin:0"><blockquote>Z czystym sumieniem mogę polecić Panią Izabelę, profesjonalizm i zaangażowanie na najwyższym poziomie. Kolejne mieszkanie na pewno będę sprzedawał za pośrednictwem pani Izabeli!</blockquote><cite>crocking97</cite></figure>
+      <figure class="op" style="margin:0"><blockquote>Pani Iza jest osobą, którą będę polecać każdemu, kto poszukuje pośrednika nieruchomości. Sprawność i dokładność działania przerosła moje oczekiwania.</blockquote><cite>Sandra M</cite></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="faq">
+  <div class="wrap faq">
+    <div class="bok"><h2>Najczęstsze pytania</h2><p>Nie ma tu Twojego pytania? Zadzwoń albo napisz, odpowiem tego samego dnia roboczego.</p></div>
+    <div>
+      <details open><summary>Jak długo trwa sprzedaż nieruchomości?</summary><p>Zwykle od kilku tygodni do kilku miesięcy, zależnie od lokalizacji, wyceny i jakości przygotowania oferty. Dobrze zaplanowany marketing - wideo, dron, opis i kampanie - zwykle skraca ten czas i podnosi cenę.</p></details>
+      <details><summary>Po co mi umowa na wyłączność?</summary><p>Biorę pełną odpowiedzialność za wynik i inwestuję w marketing premium: sesję, pionowe wideo, drona, reklamy i remarketing. Masz jeden kontakt, spójny proces i mniej chaosu, a to realnie działa na cenę i tempo.</p></details>
+      <details><summary>Jakie dokumenty są potrzebne do sprzedaży?</summary><p>Podstawą jest dokument potwierdzający prawo własności, wypis z księgi wieczystej i zaświadczenie o niezaleganiu z opłatami, a dalej dokumenty zależne od rodzaju nieruchomości. Kompletuję je razem z Tobą, od A do Z.</p></details>
+      <details><summary>Czy muszę być obecny na prezentacjach?</summary><p>Nie. Organizuję i prowadzę prezentacje sama, dbając o to, żeby nieruchomość była dobrze pokazana kupującym.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sek sz" id="kontakt">
+  <div class="wrap kt">
+    <div>
+      <h2>Porozmawiajmy o Twojej nieruchomości</h2>
+      <div class="dane">
+        <div><span>Telefon</span><a class="du" href="tel:+48602642154">602 642 154</a></div>
+        <div><span>E-mail</span><a class="du" href="mailto:izabela@dokwadratu.eu">izabela@dokwadratu.eu</a></div>
+        <div><span>Biuro</span>ul. Józefa Ignacego Kraszewskiego 9, 87-800 Włocławek</div>
+      </div>
+      <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Kraszewskiego%209%2C%2087-800%20W%C5%82oc%C5%82awek&amp;z=15&amp;output=embed" data-t="Mapa: ul. Kraszewskiego 9, Włocławek"></div>
+    </div>
+    <form id="form" novalidate>
+      <div class="cal"><label for="f-cel">W czym mogę pomóc?</label><select id="f-cel"><option>Chcę sprzedać nieruchomość</option><option>Chcę wynająć nieruchomość</option><option>Szukam nieruchomości</option><option>Wsparcie dla dewelopera</option><option>Inna sprawa</option></select></div>
+      <div><label for="f-imie">Imię i nazwisko</label><input id="f-imie" autocomplete="name" required></div>
+      <div><label for="f-tel">Telefon</label><input id="f-tel" type="tel" autocomplete="tel" required></div>
+      <div class="cal"><label for="f-mail">E-mail</label><input id="f-mail" type="email" autocomplete="email"></div>
+      <div class="cal"><label for="f-wiad">Kilka słów o nieruchomości</label><textarea id="f-wiad" placeholder="np. mieszkanie 2 pokoje, 48 m², Zazamcze"></textarea></div>
+      <label class="zg cal"><input type="checkbox" required> Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na zapytanie. Zapoznałem/am się z polityką prywatności.</label>
+      <button class="btn gr" type="submit">Wyślij zapytanie</button>
+      <p id="msg" hidden>To podgląd strony - formularz zacznie wysyłać wiadomości na docelowej stronie.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="g">
+      <div>
+        <div class="z"><svg class="kv" viewBox="0 0 44 44" aria-hidden="true"><rect x="7" y="7" width="30" height="30" fill="#003f69"/><path d="M3 41V3h38v38H24" fill="none" stroke="#ff914d" stroke-width="2"/></svg><div><b>Do Kwadratu</b>Nieruchomości &amp; Marketing</div></div>
+        <p class="opis">Izabela Koprowska, licencjonowany pośrednik w obrocie nieruchomościami (lic. 31348). Sprzedaż, wynajem i zakup we Włocławku i okolicach.</p>
+      </div>
+      <div><p class="fh">Oferty</p><ul><li><a href="#oferty">Mieszkania</a></li><li><a href="#oferty">Domy</a></li><li><a href="#oferty">Działki</a></li><li><a href="#oferty">Lokale</a></li></ul></div>
+      <div><p class="fh">Strona</p><ul><li><a href="#uslugi">Usługi</a></li><li><a href="#o-mnie">O mnie</a></li><li><a href="#opinie">Opinie</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><p class="fh">Kontakt</p><ul><li><a href="tel:+48602642154">602 642 154</a></li><li><a href="mailto:izabela@dokwadratu.eu">izabela@dokwadratu.eu</a></li><li>ul. Kraszewskiego 9</li><li>87-800 Włocławek</li></ul></div>
+    </div>
+    <div class="d"><span>© <span id="rok">2026</span> Do Kwadratu Nieruchomości i Marketing · Polityka prywatności</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=dokwadratu.eu&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+</div>
+  </div>
+</footer>
+
+<nav class="mob" id="mob" aria-label="Szybki kontakt"><a class="t" href="tel:+48602642154">Zadzwoń</a><a class="z" href="#kontakt">Zgłoś nieruchomość</a></nav>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><img alt=""><p></p><button class="x" type="button" aria-label="Zamknij">×</button><button class="p" type="button" aria-label="Poprzednie">‹</button><button class="n" type="button" aria-label="Następne">›</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
