@@ -3,8 +3,8 @@
   function zamknij(){top.classList.remove('open');bg.setAttribute('aria-expanded','false');bg.setAttribute('aria-label','Otwórz menu')}
   bg.addEventListener('click',function(){var o=top.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu')});
   document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',zamknij)});
-  var tk=false;function sc(){if(tk)return;tk=true;requestAnimationFrame(function(){top.classList.toggle('sc',window.pageYOffset>40);tk=false})}
-  addEventListener('scroll',sc,{passive:true});sc();
+  if('IntersectionObserver' in window){var sn=document.createElement('div');sn.setAttribute('aria-hidden','true');sn.style.cssText='position:absolute;top:40px;left:0;width:1px;height:1px;pointer-events:none';document.body.appendChild(sn);
+    new IntersectionObserver(function(es){top.classList.toggle('sc',!es[0].isIntersecting)}).observe(sn)}
 
   var links=[].slice.call(document.querySelectorAll('.menu a[href^="#"]:not(.btn)'));
   if('IntersectionObserver' in window){
@@ -29,7 +29,7 @@
     if(nav){var bs=nav.querySelectorAll('button');
       bs.forEach(function(b){b.addEventListener('click',function(){tor.scrollBy({left:step()*(+b.dataset.k),behavior:'smooth'})})});
       function upd(){bs[0].disabled=tor.scrollLeft<4;bs[1].disabled=tor.scrollLeft+tor.clientWidth>=tor.scrollWidth-4;nav.hidden=tor.scrollWidth<=tor.clientWidth+2}
-      tor.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+      tor.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);addEventListener('load',function(){requestAnimationFrame(upd)});
     }
   });
 
