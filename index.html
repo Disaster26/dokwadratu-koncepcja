@@ -27,6 +27,7 @@ h2{font-size:clamp(32px,3.2vw,62px)}
 h3{font-size:clamp(20px,1.3vw,26px);font-weight:500;line-height:1.25}
 p{margin:0}
 .wrap{width:var(--w);margin:0 auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 30px;background:var(--or);color:var(--gf2);font:600 1.05rem/1.2 Jost,"Jost fb",Arial,sans-serif;text-align:center;text-decoration:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s}
 .btn:hover{background:#ffb27e}
@@ -282,7 +283,7 @@ footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255
 <a class="skip" href="#oferty">Przejdź do treści</a>
 <header class="top" id="top">
   <div class="wrap">
-    <a class="logo" href="#start" aria-label="Do Kwadratu Nieruchomości Marketing - Izabela Koprowska, strona główna"><svg class="lg" viewBox="0 0 300 100" aria-hidden="true" focusable="false"><path d="M121 88H3V3h294v85h-7" fill="none" stroke="#ff9f5e" stroke-width="3"/><g fill="currentColor" font-family="Jost,'Jost fb',Arial,sans-serif"><text x="18" y="60" font-size="40" font-weight="400" textLength="56" lengthAdjust="spacingAndGlyphs">DO</text><text x="104" y="60" font-size="40" font-weight="400" textLength="178" lengthAdjust="spacingAndGlyphs">KWADRATU</text><text x="128" y="93.5" font-size="15" font-weight="500" textLength="156" lengthAdjust="spacingAndGlyphs">NIERUCHOMOŚCI MARKETING</text></g><path d="M89.0,35.5 91.0,43.5 99.0,45.5 91.0,47.5 89.0,55.5 87.0,47.5 79.0,45.5 87.0,43.5Z" fill="#ff9f5e"/></svg></a>
+    <a class="logo" href="#start"><span class="sr">Do Kwadratu Nieruchomości Marketing - Izabela Koprowska, strona główna</span><svg class="lg" viewBox="0 0 300 100" aria-hidden="true" focusable="false"><path d="M121 88H3V3h294v85h-7" fill="none" stroke="#ff9f5e" stroke-width="3"/><g fill="currentColor" font-family="Jost,'Jost fb',Arial,sans-serif"><text x="18" y="60" font-size="40" font-weight="400" textLength="56" lengthAdjust="spacingAndGlyphs">DO</text><text x="104" y="60" font-size="40" font-weight="400" textLength="178" lengthAdjust="spacingAndGlyphs">KWADRATU</text><text x="128" y="93.5" font-size="15" font-weight="500" textLength="156" lengthAdjust="spacingAndGlyphs">NIERUCHOMOŚCI MARKETING</text></g><path d="M89.0,35.5 91.0,43.5 99.0,45.5 91.0,47.5 89.0,55.5 87.0,47.5 79.0,45.5 87.0,43.5Z" fill="#ff9f5e"/></svg></a>
     <a class="ikt" href="tel:+48602642154" aria-label="Zadzwoń: 602 642 154"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="miter"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><span></span></button>
     <nav class="menu" id="menu" aria-label="Menu główne">
