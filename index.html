@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Agent nieruchomości Włocławek - sprzedaż, wynajem, zakup | Izabela Koprowska Do Kwadratu</title>
 <meta name="description" content="Licencjonowany agent nieruchomości we Włocławku. Sprzedaż, wynajem i zakup mieszkań, domów i działek: wycena, sesja zdjęciowa, dron, film i formalności u notariusza. Tel. 602 642 154.">
-<meta name="theme-color" content="#003f69">
+<meta name="theme-color" content="#1f2023">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="img/hero-m-640.webp" imagesrcset="img/hero-m-420.webp 420w, img/hero-m-640.webp 640w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
 <link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
@@ -15,7 +15,7 @@
 @font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
 @font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:"Jost fb";src:local("Arial");size-adjust:96%;ascent-override:104%;descent-override:30%}
-:root{--nav:#003f69;--nav2:#0b2f50;--or:#ff914d;--or2:#ff7a2b;--ink:#0d2236;--mut:#4a5868;--g:#f1f4f7;--line:#d9e0e7;--hh:64px;--w:min(calc(100vw - 32px),1680px)}
+:root{--gf:#1f2023;--gf2:#141517;--or:#ff9f5e;--or2:#e07a32;--ink:#1b1c1f;--mut:#53575d;--g:#f2f3f5;--line:#dcdee2;--hh:64px;--w:min(calc(100vw - 32px),1680px)}
 @media (min-width:761px){:root{--hh:84px;--w:min(91vw,1680px)}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
@@ -28,9 +28,9 @@ h3{font-size:clamp(20px,1.3vw,26px);font-weight:500;line-height:1.25}
 p{margin:0}
 .wrap{width:var(--w);margin:0 auto}
 .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 30px;background:var(--or);color:var(--nav2);font:600 1.05rem/1.2 Jost,"Jost fb",Arial,sans-serif;text-align:center;text-decoration:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s}
-.btn:hover{background:#ffa266}
-.btn.gr{background:var(--nav);color:#fff}.btn.gr:hover{background:var(--nav2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 30px;background:var(--or);color:var(--gf2);font:600 1.05rem/1.2 Jost,"Jost fb",Arial,sans-serif;text-align:center;text-decoration:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s}
+.btn:hover{background:#ffb27e}
+.btn.gr{background:var(--gf);color:#fff}.btn.gr:hover{background:var(--gf2)}
 .btn:focus-visible,.menu a:focus-visible,.tab:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 /* znak z logo: pomaranczowa rama z przerwa, w ktorej siedzi podpis */
 .rama{position:relative}
@@ -40,30 +40,30 @@ p{margin:0}
 
 /* naglowek */
 .top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
-.top.sc{border-bottom-color:var(--line);box-shadow:0 6px 18px rgba(0,40,70,.07)}
+.top.sc{border-bottom-color:var(--line);box-shadow:0 6px 18px rgba(0,0,0,.07)}
 .top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .logo{display:block;flex:none;line-height:0}
-.logo img{height:44px;width:auto}
-@media (min-width:761px){.logo img{height:60px}}
+.logo{color:var(--ink)}.logo .lg{display:block;height:46px;width:138px}
+@media (min-width:761px){.logo .lg{height:60px;width:180px}}
 .menu{display:flex;align-items:center;gap:clamp(16px,1.7vw,36px)}
 .menu a{text-decoration:none;font-weight:500;font-size:1.02rem;position:relative;padding:6px 0}
 .menu a.on::after,.menu a:not(.btn):hover::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--or)}
-.menu .tel{font-weight:600;white-space:nowrap;color:var(--nav)}
+.menu .tel{font-weight:600;white-space:nowrap;color:var(--gf)}
 .menu .btn{min-height:50px;padding:0 22px}
 .ikt{display:none}
 .burger{display:none}
 @media (max-width:1240px){.menu .tel{display:none}}
 @media (max-width:1040px){
-  .menu{position:fixed;inset:var(--hh) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 22px;border-top:1px solid var(--line);box-shadow:0 18px 30px rgba(0,40,70,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
+  .menu{position:fixed;inset:var(--hh) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 22px;border-top:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
   .top.open .menu{transform:none;opacity:1;visibility:visible}
   .menu a{padding:15px 2px;border-bottom:1px solid var(--g);font-size:1.1rem}
   .menu a.on::after,.menu a:hover::after{display:none}
-  .menu a.on{color:var(--nav);box-shadow:inset 3px 0 0 var(--or);padding-left:14px}
+  .menu a.on{color:var(--gf);box-shadow:inset 3px 0 0 var(--or);padding-left:14px}
   .menu .tel{display:block}
   .menu .btn{margin-top:16px;border:0}
-  .ikt{display:inline-grid;place-items:center;width:46px;height:46px;margin-left:auto;text-decoration:none;color:var(--nav)}
+  .ikt{display:inline-grid;place-items:center;width:46px;height:46px;margin-left:auto;text-decoration:none;color:var(--gf)}
   .ikt svg{width:23px;height:23px}
-  .burger{display:inline-grid;place-items:center;width:46px;height:46px;border:0;background:var(--nav);cursor:pointer;padding:0}
+  .burger{display:inline-grid;place-items:center;width:46px;height:46px;border:0;background:var(--gf);cursor:pointer;padding:0}
   .burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;transition:.2s}
   .burger span::before,.burger span::after{content:"";position:absolute;left:0}
   .burger span::before{top:-6px}.burger span::after{top:6px}
@@ -73,20 +73,20 @@ p{margin:0}
 }
 
 /* hero: pelne zdjecie, haslo w ramie z logo */
-.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--nav2)}
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--gf2)}
 .hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
 .hero picture img{object-fit:cover;object-position:50% 45%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,28,48,.86) 0%,rgba(6,28,48,.62) 38%,rgba(6,28,48,.08) 72%),linear-gradient(0deg,rgba(6,28,48,.55) 0%,rgba(6,28,48,0) 45%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,17,19,.86) 0%,rgba(16,17,19,.62) 38%,rgba(16,17,19,.08) 72%),linear-gradient(0deg,rgba(16,17,19,.55) 0%,rgba(16,17,19,0) 45%)}
 .hero .wrap{position:relative;z-index:1;padding:clamp(40px,7vh,96px) 0 clamp(44px,9vh,110px)}
 .hero .tresc{max-width:min(1000px,56vw);padding:clamp(30px,3vw,56px) clamp(28px,3vw,58px) clamp(38px,3.4vw,62px);--gap0:clamp(26px,2.6vw,52px);--gap1:calc(var(--gap0) + 340px)}
 .hero h1{font-size:clamp(36px,3.2vw,66px);font-weight:500;line-height:1.06}
-.hero .lead{margin-top:22px;font-size:clamp(17px,1.05vw,22px);line-height:1.55;max-width:42em;color:#e3ebf2}
+.hero .lead{margin-top:22px;font-size:clamp(17px,1.05vw,22px);line-height:1.55;max-width:42em;color:#ececec}
 .hero .btn{margin-top:30px}
 .hero .podpis{position:absolute;left:var(--gap0);bottom:0;transform:translateY(50%);padding:0 14px;font-size:.92rem;font-weight:500;letter-spacing:.02em;color:#fff;white-space:nowrap}
 @media (max-width:760px){
   .hero{min-height:calc(100svh - var(--hh));align-items:flex-end}
   .hero picture img{object-position:40% 50%}
-  .hero::after{background:linear-gradient(0deg,rgba(6,28,48,.94) 0%,rgba(6,28,48,.82) 46%,rgba(6,28,48,.15) 80%,rgba(6,28,48,0) 100%)}
+  .hero::after{background:linear-gradient(0deg,rgba(16,17,19,.94) 0%,rgba(16,17,19,.82) 46%,rgba(16,17,19,.15) 80%,rgba(16,17,19,0) 100%)}
   .hero .wrap{padding:20svh 0 30px}
   .hero .tresc{max-width:none;padding:26px 20px 32px;--gap0:20px}
   .hero h1{font-size:clamp(28px,8vw,38px);line-height:1.1}
@@ -106,7 +106,7 @@ p{margin:0}
 .tabs{display:flex;gap:0;border:1px solid var(--line)}
 .tab{font:500 1rem/1 Jost,"Jost fb",Arial,sans-serif;padding:0 20px;min-height:48px;background:#fff;border:0;border-right:1px solid var(--line);cursor:pointer;color:var(--ink)}
 .tab:last-child{border-right:0}
-.tab[aria-pressed=true]{background:var(--nav);color:#fff}
+.tab[aria-pressed=true]{background:var(--gf);color:#fff}
 .tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*24px)/4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
 .tor::-webkit-scrollbar{display:none}
 .tor.drag{cursor:grabbing;scroll-snap-type:none}
@@ -119,24 +119,31 @@ p{margin:0}
 .of .fot{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--g)}
 .of .fot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .of:hover .fot img{transform:scale(1.03)}
-.of .lab{position:absolute;left:0;top:16px;background:var(--nav);color:#fff;font-size:.82rem;font-weight:500;padding:6px 12px}
-.of .lab.or{background:var(--or);color:var(--nav2)}
+.of .lab{position:absolute;left:0;top:16px;background:var(--gf);color:#fff;font-size:.82rem;font-weight:500;padding:6px 12px}
+.of .lab.or{background:var(--or);color:var(--gf2)}
 .of .opis{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
 .of .gdzie{font-size:.9rem;color:var(--mut)}
 .of h3{font-size:clamp(18px,1.1vw,21px)}
 .of .dane{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
-.of .cena{font-size:clamp(21px,1.35vw,26px);font-weight:600;color:var(--nav);white-space:nowrap}
+.of .cena{font-size:clamp(21px,1.35vw,26px);font-weight:600;color:var(--gf);white-space:nowrap}
 .of .cena small{font-size:.62em;font-weight:500;color:var(--mut)}
 .of .par{font-size:.92rem;color:var(--mut);white-space:nowrap}
 .of .par sup,.m2 sup{color:var(--or2);font-weight:600}
 .nav2{display:flex;gap:10px;margin-top:26px}
-.nav2 button{width:52px;height:52px;border:1px solid var(--nav);background:#fff;color:var(--nav);cursor:pointer;display:grid;place-items:center}
-.nav2 button:hover:not(:disabled){background:var(--nav);color:#fff}
+.nav2 button{width:52px;height:52px;border:1px solid var(--gf);background:#fff;color:var(--gf);cursor:pointer;display:grid;place-items:center}
+.nav2 button:hover:not(:disabled){background:var(--gf);color:#fff}
 .nav2 button:disabled{opacity:.3;cursor:default}
 .nav2 svg{width:20px;height:20px}
 .dol{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .dol .uw{color:var(--mut);font-size:.95rem}
 
+/* zrealizowane */
+.of.zr .st{position:absolute;left:0;top:16px;font-size:.82rem;font-weight:600;padding:6px 12px;background:var(--gf);color:#fff}
+.of.zr .st.sp{background:var(--or);color:var(--gf2)}
+.of.zr .st.rz{background:#fff;color:var(--gf2)}
+.of.zr .stt{font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:10px}
+.of.zr .stt::before{content:"";width:.6em;height:.6em;border:2px solid var(--or)}
+.zuw{margin-top:22px;color:var(--mut);font-size:.95rem}
 /* uslugi */
 .usl{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,5vw,110px);align-items:start}
 .usl .zdj{position:sticky;top:calc(var(--hh) + 30px)}
@@ -151,18 +158,18 @@ p{margin:0}
 @media (max-width:900px){.usl{grid-template-columns:1fr}.usl .zdj{position:relative;top:0;max-width:520px}.usl .zdj img{aspect-ratio:4/3}}
 
 /* marketing - mocna sekcja w granacie z logo */
-.mk{background:var(--nav);color:#fff}
+.mk{background:var(--gf);color:#fff}
 .mk .uk{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(36px,5vw,110px);align-items:center}
 .mk h2{color:#fff}
-.mk .lead{color:#d3e1ec;margin-top:18px;max-width:36em}
+.mk .lead{color:#dadadc;margin-top:18px;max-width:36em}
 .mk ul{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px}
 .mk li{padding:18px 0;border-top:1px solid rgba(255,255,255,.18);display:flex;gap:16px;align-items:baseline}
 .mk li b{display:block;font-weight:500;font-size:1.08em}
-.mk li span{display:block;color:#c3d4e2;font-size:.94em;margin-top:2px}
+.mk li span{display:block;color:#c6c7ca;font-size:.94em;margin-top:2px}
 .mk .zdj{position:relative;padding:22px 0 0 22px}
 .mk .zdj::before{content:"";position:absolute;inset:0 22px 22px 0;border:2px solid var(--or)}
 .mk .zdj img{position:relative;width:100%;aspect-ratio:4/3;object-fit:cover}
-.mk .zdj figcaption{position:relative;margin-top:12px;font-size:.9rem;color:#c3d4e2}
+.mk .zdj figcaption{position:relative;margin-top:12px;font-size:.9rem;color:#c6c7ca}
 .mk .btn{margin-top:34px}
 @media (max-width:900px){.mk .uk{grid-template-columns:1fr}.mk ul{grid-template-columns:1fr}}
 
@@ -181,7 +188,7 @@ p{margin:0}
 /* opinie */
 .op{scroll-snap-align:start;min-width:0;background:#fff;padding:32px 30px 28px;display:flex;flex-direction:column;gap:20px;border-top:3px solid var(--or)}
 .op blockquote{margin:0;font-size:1.04em;line-height:1.6}
-.op cite{font-style:normal;font-weight:600;color:var(--nav);margin-top:auto}
+.op cite{font-style:normal;font-weight:600;color:var(--gf);margin-top:auto}
 .op cite span{display:block;font-weight:400;color:var(--mut);font-size:.88rem}
 #opn{grid-auto-columns:calc((100% - 2*24px)/3)}
 @media (min-width:2100px){#opn{grid-auto-columns:calc((100% - 3*24px)/4)}}
@@ -204,36 +211,36 @@ p{margin:0}
 .kt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,5vw,110px)}
 .kt .dane{margin-top:26px;display:grid;gap:18px}
 .kt .dane a{text-decoration:none}
-.kt .dane .du{font-size:clamp(24px,1.8vw,34px);font-weight:500;color:var(--nav)}
+.kt .dane .du{font-size:clamp(24px,1.8vw,34px);font-weight:500;color:var(--gf)}
 .kt .dane .du:hover{color:var(--or2)}
 .kt .dane span{display:block;color:var(--mut);font-size:.92rem}
-.mapa{margin-top:30px;aspect-ratio:16/10;background:#dfe5eb;border:1px solid var(--line)}
+.mapa{margin-top:30px;aspect-ratio:16/10;background:#e3e5e8;border:1px solid var(--line)}
 .mapa iframe{width:100%;height:100%;border:0;display:block}
 form{background:#fff;padding:clamp(24px,3vw,48px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px;align-content:start}
 form .cal{grid-column:1/-1}
 label{display:block;font-size:.92rem;font-weight:500;margin-bottom:6px}
-input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #b9c4cf;background:#fff;color:var(--ink);border-radius:0}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #b8bcc2;background:#fff;color:var(--ink);border-radius:0}
 textarea{min-height:130px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--or);outline-offset:0;border-color:var(--or)}
 [aria-invalid=true]{border-color:#c0392b}
 .zg{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;color:var(--mut);font-weight:400}
-.zg input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--nav)}
+.zg input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--gf)}
 #msg{grid-column:1/-1;background:var(--g);padding:14px 16px;border-left:3px solid var(--or)}
 form .btn{justify-self:start}
 @media (max-width:900px){.kt{grid-template-columns:1fr}}
 @media (max-width:560px){form{grid-template-columns:1fr}form .btn{width:100%}}
 
 /* stopka */
-footer{background:var(--nav2);color:#d6e1ea;padding:56px 0 26px;font-size:.95rem}
+footer{background:var(--gf2);color:#d2d3d6;padding:56px 0 26px;font-size:.95rem}
 footer .g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
 footer .fh{margin:0 0 12px;color:#fff;font-weight:500;font-size:1.02rem}
 footer a{text-decoration:none}footer a:hover{color:#fff;text-decoration:underline}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 footer .z{display:flex;align-items:center;gap:14px}
-footer .z .kv{width:44px;height:44px;flex:none}
+footer .z{color:#fff}footer .z .lg{width:210px;height:70px}
 footer .z b{color:#fff;font-weight:500;font-size:1.12rem;display:block;line-height:1.2}
-footer .opis{margin-top:14px;max-width:30em;color:#b8cad8}
-footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:#a9bccc;font-size:.88rem}
+footer .opis{margin-top:14px;max-width:30em;color:#b5b7bb}
+footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:#a9abb0;font-size:.88rem}
 @media (max-width:900px){footer .g{grid-template-columns:1fr 1fr}footer .g>div:first-child{grid-column:1/-1}}
 
 .wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
@@ -252,19 +259,19 @@ footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255
 /* pasek dolny po przewinieciu */
 .mob{display:none}
 @media (max-width:760px){
-  .mob{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 18px rgba(0,40,70,.15)}
+  .mob{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 18px rgba(0,0,0,.15)}
   .mob.widac{transform:none}
   .mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;text-decoration:none;font-weight:600}
-  .mob .t{background:#fff;color:var(--nav)}
-  .mob .z{background:var(--or);color:var(--nav2)}
+  .mob .t{background:#fff;color:var(--gf)}
+  .mob .z{background:var(--or);color:var(--gf2)}
   footer{padding-bottom:84px}
 }
 
 /* lightbox */
-.lb{position:fixed;inset:0;z-index:90;background:rgba(5,20,34,.94);display:none;align-items:center;justify-content:center;padding:60px 16px}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(12,12,14,.94);display:none;align-items:center;justify-content:center;padding:60px 16px}
 .lb.otw{display:flex}
 .lb img{max-width:min(1400px,100%);max-height:calc(100svh - 150px);width:auto;object-fit:contain}
-.lb p{position:absolute;left:16px;right:16px;bottom:18px;text-align:center;color:#dce6ef;font-size:.95rem}
+.lb p{position:absolute;left:16px;right:16px;bottom:18px;text-align:center;color:#e2e2e4;font-size:.95rem}
 .lb button{position:absolute;width:52px;height:52px;border:0;background:rgba(255,255,255,.1);color:#fff;font-size:26px;cursor:pointer}
 .lb .x{top:12px;right:12px}.lb .p{left:12px;top:50%}.lb .n{right:12px;top:50%}
 .of .fot button{all:unset;display:block;width:100%;height:100%;cursor:zoom-in}
@@ -275,11 +282,12 @@ footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255
 <a class="skip" href="#oferty">Przejdź do treści</a>
 <header class="top" id="top">
   <div class="wrap">
-    <a class="logo" href="#start" aria-label="Do Kwadratu Nieruchomości i Marketing - Izabela Koprowska, strona główna"><img src="img/logo-112.webp" width="288" height="112" alt="Do Kwadratu Nieruchomości &amp; Marketing - Izabela Koprowska"></a>
+    <a class="logo" href="#start" aria-label="Do Kwadratu Nieruchomości i Marketing - Izabela Koprowska, strona główna"><svg class="lg" viewBox="0 0 300 100" role="img" aria-label="Do Kwadratu Nieruchomości Marketing"><path d="M121 88H3V3h294v85h-7" fill="none" stroke="#ff9f5e" stroke-width="3"/><g fill="currentColor" font-family="Jost,'Jost fb',Arial,sans-serif"><text x="18" y="60" font-size="40" font-weight="400" textLength="56" lengthAdjust="spacingAndGlyphs">DO</text><text x="104" y="60" font-size="40" font-weight="400" textLength="178" lengthAdjust="spacingAndGlyphs">KWADRATU</text><text x="128" y="93.5" font-size="15" font-weight="500" textLength="156" lengthAdjust="spacingAndGlyphs">NIERUCHOMOŚCI MARKETING</text></g><path d="M89.0,35.5 91.0,43.5 99.0,45.5 91.0,47.5 89.0,55.5 87.0,47.5 79.0,45.5 87.0,43.5Z" fill="#ff9f5e"/></svg></a>
     <a class="ikt" href="tel:+48602642154" aria-label="Zadzwoń: 602 642 154"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="miter"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><span></span></button>
     <nav class="menu" id="menu" aria-label="Menu główne">
       <a href="#oferty">Oferty</a>
+      <a href="#zrealizowane">Zrealizowane</a>
       <a href="#uslugi">Usługi</a>
       <a href="#marketing">Marketing</a>
       <a href="#o-mnie">O mnie</a>
@@ -366,7 +374,54 @@ footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255
   </div>
 </section>
 
-<section class="sek sz" id="uslugi">
+<section class="sek sz" id="zrealizowane">
+  <div class="wrap">
+    <div class="glowa">
+      <div>
+        <h2>Zrealizowane</h2>
+        <p>Wybrane nieruchomości, które są już sprzedane, wynajęte albo zarezerwowane. Te same zdjęcia i ta sama staranność, z jaką przygotowuję każdą nową ofertę.</p>
+      </div>
+      <div class="nav2" data-nav="zr" style="margin:0"><button type="button" data-k="-1" aria-label="Poprzednie zrealizowane"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.5 4l-6 6 6 6"/></svg></button><button type="button" data-k="1" aria-label="Następne zrealizowane"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.5 4l6 6-6 6"/></svg></button></div>
+    </div>
+    <div class="tor" id="zr" data-tor data-grupa>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-antoniego-1400.webp" aria-label="Powiększ zdjęcie: Wykończona kawalerka na 1. piętrze"><img src="img/z-antoniego-480.webp" srcset="img/z-antoniego-480.webp 480w, img/z-antoniego-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Salon wykończonej kawalerki przy ulicy Świętego Antoniego"></button><span class="st sp">Sprzedane</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, ul. Świętego Antoniego</span><h3>Wykończona kawalerka na 1. piętrze</h3><div class="dane"><span class="stt">Sprzedane</span><span class="par">kawalerka · 1. piętro</span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-spichlerz-1400.webp" aria-label="Powiększ zdjęcie: Kawalerka w historycznym spichlerzu, z windą i balkonem"><img src="img/z-spichlerz-480.webp" srcset="img/z-spichlerz-480.webp 480w, img/z-spichlerz-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Łazienka z prysznicem w kawalerce w dawnym spichlerzu w Dobrzyniu nad Wisłą"></button><span class="st sp">Sprzedane</span></div>
+        <div class="opis"><span class="gdzie">Dobrzyń nad Wisłą, ul. Płocka</span><h3>Kawalerka w historycznym spichlerzu, z windą i balkonem</h3><div class="dane"><span class="stt">Sprzedane</span><span class="par">1 pok. · 26,84 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-kazimierza-1400.webp" aria-label="Powiększ zdjęcie: Nowoczesne dwa pokoje na parterze"><img src="img/z-kazimierza-480.webp" srcset="img/z-kazimierza-480.webp 480w, img/z-kazimierza-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Pokój dzienny w mieszkaniu na osiedlu Kazimierza"></button><span class="st wy">Wynajęte</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, os. Kazimierza</span><h3>Nowoczesne dwa pokoje na parterze</h3><div class="dane"><span class="stt">Wynajęte</span><span class="par">2 pok. · 32 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-cienista-1400.webp" aria-label="Powiększ zdjęcie: Dwa pokoje na osiedlu zamkniętym, z miejscem postojowym"><img src="img/z-cienista-480.webp" srcset="img/z-cienista-480.webp 480w, img/z-cienista-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Kuchnia w dwupokojowym mieszkaniu przy ulicy Cienistej"></button><span class="st wy">Wynajęte</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, ul. Cienista</span><h3>Dwa pokoje na osiedlu zamkniętym, z miejscem postojowym</h3><div class="dane"><span class="stt">Wynajęte</span><span class="par">2 pok. · 32 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-warminska-1400.webp" aria-label="Powiększ zdjęcie: Nieruchomość usługowo-magazynowa"><img src="img/z-warminska-480.webp" srcset="img/z-warminska-480.webp 480w, img/z-warminska-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Hala w nieruchomości usługowo-magazynowej przy ulicy Warmińskiej"></button><span class="st wy">Wynajęte</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, ul. Warmińska</span><h3>Nieruchomość usługowo-magazynowa</h3><div class="dane"><span class="stt">Wynajęte</span><span class="par">250 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-parcele-1400.webp" aria-label="Powiększ zdjęcie: Całoroczny domek nad jeziorem, przy lesie"><img src="img/z-parcele-480.webp" srcset="img/z-parcele-480.webp 480w, img/z-parcele-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Widok z drona na Jezioro Modzerowskie i działki w Długich Parcelach"></button><span class="st rz">Rezerwacja</span></div>
+        <div class="opis"><span class="gdzie">Długie Parcele, gm. Izbica Kujawska</span><h3>Całoroczny domek nad jeziorem, przy lesie</h3><div class="dane"><span class="stt">Rezerwacja</span><span class="par">działka 598 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-bluszczowa-1400.webp" aria-label="Powiększ zdjęcie: Wolnostojący dom z dużym ogrodem"><img src="img/z-bluszczowa-480.webp" srcset="img/z-bluszczowa-480.webp 480w, img/z-bluszczowa-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Dom przy ulicy Bluszczowej na Michelinie, jesienne pnącza przed wejściem"></button><span class="st rz">Rezerwacja</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, Michelin, ul. Bluszczowa</span><h3>Wolnostojący dom z dużym ogrodem</h3><div class="dane"><span class="stt">Rezerwacja</span><span class="par">4 pok. · 80 m<sup>2</sup></span></div></div>
+      </article>
+      <article class="of zr">
+        <div class="fot"><button type="button" data-lb="img/z-wieniecka-1400.webp" aria-label="Powiększ zdjęcie: Dwa pokoje na Zazamczu"><img src="img/z-wieniecka-480.webp" srcset="img/z-wieniecka-480.webp 480w, img/z-wieniecka-800.webp 800w" sizes="(max-width:600px) 84vw, (max-width:1300px) 33vw, 25vw" width="480" height="360" loading="lazy" alt="Salon z aneksem kuchennym w mieszkaniu przy ulicy Wienieckiej"></button><span class="st rz">Rezerwacja</span></div>
+        <div class="opis"><span class="gdzie">Włocławek, Zazamcze, ul. Wieniecka</span><h3>Dwa pokoje na Zazamczu</h3><div class="dane"><span class="stt">Rezerwacja</span><span class="par">2 pok. · 37,3 m<sup>2</sup></span></div></div>
+      </article>
+    </div>
+    <p class="uw zuw">Statusy według oznaczeń ofert na obecnej stronie (18.11.2026).</p>
+  </div>
+</section>
+
+<section class="sek" id="uslugi">
   <div class="wrap usl">
     <div class="zdj"><div class="rama"><img src="img/uslugi-700.webp" srcset="img/uslugi-700.webp 700w, img/uslugi-1200.webp 1200w" sizes="(max-width:900px) 92vw, 38vw" width="700" height="875" loading="lazy" alt="Jasny salon z wyjściem na ogród w domu w Szpetalu Górnym"></div></div>
     <div>
@@ -479,7 +534,7 @@ footer .d{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255
   <div class="wrap">
     <div class="g">
       <div>
-        <div class="z"><svg class="kv" viewBox="0 0 44 44" aria-hidden="true"><rect x="7" y="7" width="30" height="30" fill="#003f69"/><path d="M3 41V3h38v38H24" fill="none" stroke="#ff914d" stroke-width="2"/></svg><div><b>Do Kwadratu</b>Nieruchomości &amp; Marketing</div></div>
+        <div class="z"><svg class="lg" viewBox="0 0 300 100" role="img" aria-label="Do Kwadratu Nieruchomości Marketing"><path d="M121 88H3V3h294v85h-7" fill="none" stroke="#ff9f5e" stroke-width="3"/><g fill="currentColor" font-family="Jost,'Jost fb',Arial,sans-serif"><text x="18" y="60" font-size="40" font-weight="400" textLength="56" lengthAdjust="spacingAndGlyphs">DO</text><text x="104" y="60" font-size="40" font-weight="400" textLength="178" lengthAdjust="spacingAndGlyphs">KWADRATU</text><text x="128" y="93.5" font-size="15" font-weight="500" textLength="156" lengthAdjust="spacingAndGlyphs">NIERUCHOMOŚCI MARKETING</text></g><path d="M89.0,35.5 91.0,43.5 99.0,45.5 91.0,47.5 89.0,55.5 87.0,47.5 79.0,45.5 87.0,43.5Z" fill="#ff9f5e"/></svg></div>
         <p class="opis">Izabela Koprowska, licencjonowany pośrednik w obrocie nieruchomościami (lic. 31348). Sprzedaż, wynajem i zakup we Włocławku i okolicach.</p>
       </div>
       <div><p class="fh">Oferty</p><ul><li><a href="#oferty">Mieszkania</a></li><li><a href="#oferty">Domy</a></li><li><a href="#oferty">Działki</a></li><li><a href="#oferty">Lokale</a></li></ul></div>
